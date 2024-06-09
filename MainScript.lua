@@ -8,6 +8,8 @@ local Polaris_user = getgenv().PolarisUser or "Developer"
 local canLoadPolaris = true--getgenv().EOIFHEIUFHu0e98fekwjfbnweiurghfueiyrgy9re088ug
 local hurttime = 0
 local PolarisRelease = "2.07 Beta"
+local queueteleport = (syn and syn.queue_on_teleport) or queue_on_teleport or (fluxus and fluxus.queue_on_teleport)
+queueteleport('loadstring(game:HttpGet("https://raw.githubusercontent.com/RunAccount1/AeolusV2/main/MainScript.lua", true))()')
 
 if not canLoadPolaris then return end
 
